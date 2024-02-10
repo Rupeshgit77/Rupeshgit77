@@ -1,0 +1,41 @@
+.img{
+    filter: grayscale(100%);
+    height:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    -webkit-box-reflect: right 0 linear-gradient(to right,#0000,#0009);
+}
+.img:hover{
+    filter: grayscale(0%);
+}
+.gray-p{
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke: 2px red;
+    text-align: center;
+}
+body{
+    background-color: black;
+    padding: 8% 0% 0% 1%;
+}
+
+.gallery{
+  width: 30%;
+  height: 200px;
+  display: flex;
+  gap: 5px;
+}
+.gallery img{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.gallery img:hover{
+    width: 100%;
+}
