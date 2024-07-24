@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh-portfolio</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+}
+body{
+    background: #081b29;
+    overflow-x: hidden;
+}
+.main-bar{
+    position: relative;
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.nav-bar{
+    position: relative;
+}
+.logo{
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.nav-bar{
+    font-size: 35px;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+     margin: 35px;
+     cursor: pointer;
+}
+.nav-bar::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    bottom: -10px;
+    transition: 0.2s;
+}
+.nav-bar:hover::after{
+    width: 100%;
+}
+.nav-bar:hover{
+    color:hsl(0, 100%, 50%);
+}
+.abt-me{
+    position: relative;
+    color: #fff;
+    display: block;
+    justify-content: space-around;  
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    left: 10%;
+}
+.left-sec{
+    position: relative;
+   font-size: 3rem;
+   margin-left: 5%;
+   letter-spacing: 2px;
+   top: 50%;  
+   height: 30vh;
+}
+.right-sec{
+   position: relative;
+   top: -12rem;
+   left: 50rem;
+   height: 60vh;
+   width: 30vw;
+   padding-right: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+img{
+    height: 60vh;
+    width: 60vw;
+    border-radius: 50%;
+    border: none;
+}
+.button-bar{
+    margin: -8%;
+    position: absolute;
+    left: 18.75%;
+}
+.cv{
+    border-radius: 25px;
+    color: cyan;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow:  0 0 5px cyan,0 0 25px cyan;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.cv:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan , 0 0 100px cyan;
+    color: white; 
+}
+.cv-1{
+    border-radius: 25px;
+    color: cyan;
+    padding: 20px 20px;
+    margin-top: 30%;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 40px;
+    box-shadow:  0 0 5px cyan,0 0 25px cyan;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+.cv-1:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan , 0 0 100px cyan;
+    color: white; 
+}
+.abt{
+    color: white;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+    font-size: 32px;
+}
+.con{
+    position: relative;
+    font-size: 28px;
+    height: 20vh;
+    width: 60vw;
+    padding: 12%;
+    color: white;
+}
+.img-container{
+    position: relative;
+    margin-left: 60%;
+    margin-top: -20%;
+}
+.a1{
+    position: relative;
+   height: 60vh;
+   width: 30vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.skillset{
+    color: #fff;
+    font-size: 60px;
+    margin-left: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.divfrontend{
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    position:relative;
+     display: flex;
+     justify-content: space-around;
+    align-items: center;
+    left: 5%;
+}
+.ft{
+    height: 40vh;
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    top: 5%;
+    left: -30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.htmlogo{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vw;
+}
+.htlogo{
+    position: relative;
+    height: 10vh;
+    width: 5vw;
+    top: 20%;
+    margin-left:-5%;
+    border-radius: 50%;
+    border:none;
+}
+.skill{
+    height: 180px;  
+    width: 120px;
+    position:relative;
+    margin-left: -30px;
+ 
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: -17px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(202, 237, 240, 0.15)
+                 -6px -6px 10px -1px rgba(216, 230, 233, 0.7);
+}
+.inner{
+    height:120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(15, 14, 14, 0.7),
+                -0.5px -0.5px 0px rgb(10, 9, 9),
+                0.5px 0.5px 0px rgb(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+                position: relative;
+                top: -5%;
+                left: 5%;
+}
+.number{
+    font-weight: 600;
+    color: #555;
+}
+circle{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: luffy 2s linear forwards;
+}
+.js-circle{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: zoro 2s linear forwards;
+}
+.css-circle{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: sanji 2s linear forwards;
+}
+.mongo{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: ussop 2s linear forwards;
+}
+.node{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: franky 2s linear forwards;
+}
+.sql{
+    fill: none;
+    stroke: rgb(37, 236, 226);
+    stroke-width: 10px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: brook 2s linear forwards;
+}
+#element{
+    color: aqua;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes luffy{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes zoro{
+    100%{
+        stroke-dashoffset: 255;
+    }
+}
+@keyframes sanji{
+    100%{
+        stroke-dashoffset: 220;
+    }
+}
+@keyframes ussop{
+    100%{
+        stroke-dashoffset: 320;
+    }
+}
+@keyframes franky{
+    100%{
+        stroke-dashoffset: 340;
+    }
+}
+@keyframes brook{
+    100%{
+        stroke-dashoffset: 170;
+    }
+}
+
+.ft-1{
+    height: 80vh;
+    color: #fff;
+    font-size: 36px;
+    position: relative;
+    top: -5%;
+    left: -30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.htmlogo-1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vw;
+    position: relative;
+   margin-top:  -10%;
+}
+.react{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vw;
+    position: relative;
+   margin-top:  -15%;
+}
+.projects{
+    height: 50vh;
+    width: 60vw;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%);
+    margin-left: -20%;
+}
+
+.zigzag{
+    height: 60vh;
+    width: 25%;
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur;
+    border: 1px solid white;
+    margin-left: 50px;
+    position: relative;
+    top: -50px;
+    border-radius: 50px;
+}
+.proj-image{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.proj-name{
+    font-size: 36px;
+    color: #fff;
+    padding-left: 20%;
+    position: relative;
+    top: 5%;
+}
+.btn{
+    border-radius: 25px;
+    color: cyan;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow:  0 0 5px cyan,0 0 25px cyan;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    left: 30%;
+    margin-top: 20%;
+}
+.btn:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan , 0 0 100px cyan;
+    color: white; 
+}
+.btn-1{
+    border-radius: 25px;
+    color: cyan;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow:  0 0 5px cyan,0 0 25px cyan;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    position: relative;
+    left: 30%;
+    margin-top: 20%;
+}
+.btn-1:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan , 0 0 100px cyan;
+    color: white; 
+    cursor: pointer;
+}
+.proj-1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+     margin-top: -28.5%;
+}
+.proj-2{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+     margin-top: -28.5%;
+     left: 33%;
+}
+.landingpage{
+    height: 60vh;
+    width: 25%;
+    background-color: rgba(255,255,255,0.4);
+    backdrop-filter: blur;
+    border: 1px solid white;
+    margin-left: 50px;
+    position: relative;
+    top: -50px;
+    border-radius: 50px;
+}
+.proj3-image{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.proj-name-1{
+    font-size: 36px;
+    color: #fff;
+    padding-left: 20%;
+    position: relative;
+    top: 5%;
+}
+.btn-2{
+    border-radius: 25px;
+    color: cyan;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 800;
+    box-shadow:  0 0 5px cyan,0 0 25px cyan;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    left: 30%;
+    margin-top: 20%;
+}
+.btn-2:hover{
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan , 0 0 100px cyan;
+    color: white; 
+    cursor: pointer;
+}
+
+.contactme{
+    height:40vh;
+    width:100%;
+    color: #fff;
+    flex-direction: column;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cn{
+    position: relative;
+    left: -34%;
+}
+ .info-name{
+    position: relative;
+    margin-top: 5%;
+    left: -35%;  
+}
+ .info-1{
+    position: relative;
+    left: -27%;
+   margin-top: -2.59%;
+}
+ .info-name-1{
+    position: relative;
+    margin-top: -4.5%;
+    left: -10%;  
+}
+ .info-2{
+    margin-top: -2.5%;
+    position: relative;
+    left: 10px;
+}
+.info-name-2{
+    position: relative;
+   margin-top: -5%;
+    left: 20%; 
+}
+.info-3{
+    position: relative;
+    left: 170%;
+    margin-top: -11%;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+.socialprofie{
+    color: #fff;
+    font-size:36px;
+    margin-left:5%;
+}
+.maincontainer{
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 7%;
+}
+.sc-git{
+    height: 100px;
+    width: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="main-bar">
+        <h3 class="logo">Rupesh's portfolio</h3>
+        <nav>
+              <a class="nav-bar" href="#">Home</a>
+              <a class="nav-bar" href="#aboutme">About</a>
+              <a class="nav-bar" href="#skill">Skills</a>
+              <a class="nav-bar" href="#projects-">Projects</a>
+              <a class="nav-bar" href="#get">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="abt-me">
+            <div class="left-sec">
+            <div>I'am Rupesh <br> A passionate </div>
+            <span id="element"></span>
+             </div>
+            <div class="right-sec">
+              <img src="https://res.cloudinary.com/dfqc3n2we/image/upload/v1710686716/IMG-20240317-WA0008_mlhpbe.jpg" alt="img-1">
+            </div>
+        </section>  
+    </main>
+    <section class="button-bar">
+        <button class="cv">Download CV</button> 
+        <button class="cv-1">Hire Me</button> 
+    </section>
+    <section>
+        <div class="abt"  id="aboutme">
+            <h1>About Me</h1>
+        </div>
+        <div>
+            <div class="con">Currently pursuing my BCA graduation with proficiency in HTML, CSS, and JavaScript, I have developed impactful front-end projects. Eager to expand my skills. I am adept at using Git, GitHub, and VS Code for collaborative coding. Passionate about creating responsive web applications, I am committed to learning and contributing effectively in the dynamic field of MERN stack development.feel free to contact me</div>
+        <div  class="img-container">
+            <img class="a1" src="https://res.cloudinary.com/dfqc3n2we/image/upload/v1710686716/IMG-20240317-WA0008_mlhpbe.jpg" alt="img-1">
+        </div>
+    </section> 
+<section class="frontend-skills">
+    <div class="skillset" id="skill">
+        <p> Technical skills:</p>
+    </div>
+    <div class="ft">FRONT-END:</div>
+        <div class="divfrontend">
+            <div class="htmlogo">
+                <h4 id="ht-1">HTML</h4>
+                <img class="htlogo" src="/Rupesh_portfolio/htmlimage.png" alt="image">
+              <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                     <div id="number">
+                        
+                     </div>
+                    </div>
+                </div>
+         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+           width="160px" height="160px">
+        <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63"/>
+                <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+        </defs>
+        <circle cx="70" cy="70" r="60" stroke-linecap="round" />
+        </svg>
+              </div>
+            </div>
+           <div class="htmlogo">
+            <h4 id="cs-1">CSS</h4>
+            <img class="htlogo"src="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo.png">
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                     <div id="number1">
+                        
+                     </div>
+                    </div>
+                </div>
+         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+           width="160px" height="160px">
+        <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63"/>
+                <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+        </defs>
+        <circle class="css-circle" cx="70" cy="70" r="60" stroke-linecap="round" />
+        </svg>
+              </div>
+            </div>
+            <div class="htmlogo">
+                <h4 id="js-1">JAVA-SCRIPT</h4>
+                <img class="htlogo" src="/Rupesh_portfolio/js_5968292.png" alt="image">
+              <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                     <div id="number2">
+                       
+                     </div>
+                    </div>
+                </div>
+         <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+           width="160px" height="160px">
+        <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63"/>
+                <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+        </defs>
+        <circle class="js-circle" cx="70" cy="70" r="60" stroke-linecap="round" />
+        </svg>
+              </div>
+            </div>
+     </div> 
+ </section>
+   <section class="backend-skills">
+     <div class="ft-1">BACK-END:</div>
+     <div class="divfrontend">
+         <div class="htmlogo-1">
+             <h4 id="bk-1">MONGO-DB</h4>
+             <img class="htlogo" src="/Rupesh_portfolio/mongo.png" alt="image">
+           <div class="skill">
+             <div class="outer">
+                 <div class="inner">
+                  <div id="number3">
+                     
+                  </div>
+                 </div>
+             </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        width="160px" height="160px">
+     <defs>
+         <linearGradient id="GradientColor">
+             <stop offset="0%" stop-color="#e91e63"/>
+             <stop offset="100%" stop-color="#673ab7"/>
+         </linearGradient>
+     </defs>
+     <circle class="mongo" cx="70" cy="70" r="60" stroke-linecap="round" />
+     </svg>
+           </div>
+         </div>
+        <div class="htmlogo-1">
+         <h4 id="bk-1">NODE-JS</h4>
+         <img class="htlogo" src="/Rupesh_portfolio/node.jpg">
+         <div class="skill">
+             <div class="outer">
+                 <div class="inner">
+                  <div id="number4">
+                     
+                  </div>
+                 </div>
+             </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        width="160px" height="160px">
+     <defs>
+         <linearGradient id="GradientColor">
+             <stop offset="0%" stop-color="#e91e63"/>
+             <stop offset="100%" stop-color="#673ab7"/>
+         </linearGradient>
+     </defs>
+     <circle class="node" cx="70" cy="70" r="60" stroke-linecap="round" />
+     </svg>
+           </div>
+         </div>
+         <div class="htmlogo-1">
+             <h4 id="bk-1">SQL</h4>
+             <img class="htlogo" src="/Rupesh_portfolio/sql.png" alt="image">
+           <div class="skill">
+             <div class="outer">
+                 <div class="inner">
+                  <div id="number5">
+                    
+                  </div>
+                 </div>
+             </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        width="160px" height="160px">
+     <defs>
+         <linearGradient id="GradientColor">
+             <stop offset="0%" stop-color="#e91e63"/>
+             <stop offset="100%" stop-color="#673ab7"/>
+         </linearGradient>
+     </defs>
+     <circle class="sql" cx="70" cy="70" r="60" stroke-linecap="round" />
+     </svg>
+           </div>
+         </div>
+     </div>
+ </section>
+
+ <section class="frameworks">
+  <div class="ft-1">FRAME-WORKS:</div>
+  <div class="divfrontend">
+      <div class="react">
+          <h4 id="bk-1">REACT-JS</h4>
+          <img class="htlogo" src="/Rupesh_portfolio/react.webp" alt="image">
+        <div class="skill">
+          <div class="outer">
+              <div class="inner">
+               <div id="number6">
+                  
+               </div>
+              </div>
+          </div>
+   <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     width="160px" height="160px">
+  <defs>
+      <linearGradient id="GradientColor">
+          <stop offset="0%" stop-color="#e91e63"/>
+          <stop offset="100%" stop-color="#673ab7"/>
+      </linearGradient>
+  </defs>
+  <circle class="mongo" cx="70" cy="70" r="60" stroke-linecap="round" />
+  </svg>
+        </div>
+      </div>
+          <div class="react">
+              <h4 id="bk-1">TAILWIND-CSS</h4>
+              <img class="htlogo" src="/Rupesh_portfolio/tailwind.jpg" alt="image">
+            <div class="skill">
+              <div class="outer">
+                  <div class="inner">
+                   <div id="number7">
+                      
+                   </div>
+                  </div>
+              </div>
+       <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+         width="160px" height="160px">
+      <defs>
+          <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63"/>
+              <stop offset="100%" stop-color="#673ab7"/>
+          </linearGradient>
+      </defs>
+      <circle class="mongo" cx="70" cy="70" r="60" stroke-linecap="round" />
+      </svg>
+</div>
+</div>
+<div class="react">
+    <h4 id="bk-1">BOOSTRAP</h4>
+    <img class="htlogo" src="/Rupesh_portfolio/boost.png" alt="image">
+  <div class="skill">
+    <div class="outer">
+        <div class="inner">
+         <div id="number8">
+            
+         </div>
+        </div>
+    </div>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+width="160px" height="160px">
+<defs>
+<linearGradient id="GradientColor">
+    <stop offset="0%" stop-color="#e91e63"/>
+    <stop offset="100%" stop-color="#673ab7"/>
+</linearGradient>
+</defs>
+<circle class="mongo" cx="70" cy="70" r="60" stroke-linecap="round" />
+</svg>
+       </div>
+    </div>
+ </div>
+</section>
+
+<section class="projectsport">
+<div class="projects" id="projects-">
+    <div>PROJECTS:</div>
+</div>
+
+<figure class="proj">
+     <div class="zigzag">
+        <div>
+            <img class="proj-image" src="/Rupesh_portfolio/zig.jpg">
+        </div>
+        <p class="proj-name">ZIGZAG-MUSIZ</p>
+        <div>
+            <a href="https://zigzagmusiz.free.nf/?i=1"target="_blank">
+                <button class="btn">Live-Demo</button>
+            </a>  
+        </div>
+     </div> 
+</figure>
+
+<div class="proj-1">
+    <div class="zigzag">
+       <div>
+           <img class="proj-image" src="/Rupesh_portfolio/weather.jpg">
+       </div>
+       <p class="proj-name">WEATHER APP</p>
+       <div>
+           <a href="https://wheatherchecker.great-site.net/weatherchecker/?i=1" target="_blank">
+               <button class="btn-1">Live-Demo</button>
+           </a>  
+       </div>
+    </div> 
+</div>
+
+<div class="proj-2">
+    <div class="landingpage">
+        <div>
+            <img class="proj3-image" src="/Rupesh_portfolio/product.jpg">
+        </div>
+        <p class="proj-name-1">LANDING-PAGE</p>
+        <div>
+            <a href="/landing_page" target="_blank">
+                <button class="btn-2">Live-Demo</button>
+            </a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="contactme">
+<footer class="Contact">
+     <div class="contactme" id="get">
+        <div class="cn">
+            <h1>Contact Me:</h1>
+        </div>
+        <label class="info-name">NAME:</label>
+        <p class="info-1">Rupesh</p><br>
+        <label class="info-name-1">PH-NO:</label>
+        <P class="info-2">7670907547</P><br>
+        <label class="info-name-2">E-MAIL:</label>
+        <a href="rupeshleet@gmail.com">
+            <p class="info-3">rupeshleet@gmail.com</p>
+        </a>   
+     </div>
+    </section>
+
+    <section id="socio">
+     <div class="socialprofie">
+        <h1>Social-Profile:</h1>
+        <div class="maincontainer">
+            <div class="git">
+                <a href="https://github.com/Rupeshgit77" target="_blank">
+                    <img class="sc-git" src="/Rupesh_portfolio/goithub.png" alt="git">
+                </a>
+                <p>Git Hub</p>
+            </div>
+           <div class="linkedin">
+            <a href="https://www.linkedin.com/in/rupesh-bhimineni-877aa329a/" target="_blank">
+                <img class="sc-git" src="/Rupesh_portfolio/linkedin.jpg" alt="linkedin">
+            </a>
+            <p>Linkedin</p>
+           </div>
+           <div class="insta">
+            <a href="https://instagram.com/_itz_rupesh_45" target="_blank">
+                <img class="sc-git" src="/Rupesh_portfolio/insta.jpg" alt="insta">
+            </a>
+            <p>Instagram</p>
+           </div>
+        </div>
+    </div>
+</section> 
+</footer>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let number = document.getElementById("number");
+       let counter = 0;
+        setInterval(() => {
+    if(counter == 85){
+        clearInterval();
+    }
+    else{
+        counter += 1;
+        number.innerHTML = counter + "%";
+    }
+},16)
+let number1 = document.getElementById("number1");
+       let counter1 = 0;
+        setInterval(() => {
+    if(counter1 == 70){
+        clearInterval();
+    }
+    else{
+        counter1 += 1;
+        number1.innerHTML = counter1 + "%";
+    }
+}, 20)
+
+let number2 = document.getElementById("number2");
+       let counter2 = 0;
+        setInterval(() => {
+    if(counter2 == 60){
+        clearInterval();
+    }
+    else{
+        counter2 += 1;
+        number2.innerHTML = counter2 + "%";
+    }
+}, 22)
+
+let number3 = document.getElementById("number3");
+       let counter3 = 0;
+        setInterval(() => {
+    if(counter3 == 45){
+        clearInterval();
+    }
+    else{
+        counter3 += 1;
+        number3.innerHTML = counter3 + "%";
+    }
+}, 35)
+
+let number4 = document.getElementById("number4");
+       let counter4 = 0;
+        setInterval(() => {
+    if(counter4 == 40){
+        clearInterval();
+    }
+    else{
+        counter4 += 1;
+        number4.innerHTML = counter4 + "%";
+    }
+}, 37)
+
+let number5 = document.getElementById("number5");
+       let counter5 = 0;
+        setInterval(() => {
+    if(counter5 == 80){
+        clearInterval();
+    }
+    else{
+        counter5 += 1;
+        number5.innerHTML = counter5 + "%";
+    }
+}, 18)
+
+let number6 = document.getElementById("number6");
+       let counter6 = 0;
+        setInterval(() => {
+    if(counter6 == 40){
+        clearInterval();
+    }
+    else{
+        counter6 += 1;
+        number6.innerHTML = counter6 + "%";
+    }
+}, 37)
+
+let number7 = document.getElementById("number7");
+       let counter7 = 0;
+        setInterval(() => {
+    if(counter7 == 45){
+        clearInterval();
+    }
+    else{
+        counter7 += 1;
+        number7.innerHTML = counter7 + "%";
+    }
+}, 36)
+
+let number8 = document.getElementById("number8");
+       let counter8 = 0;
+        setInterval(() => {
+    if(counter8 == 45){
+        clearInterval();
+    }
+    else{
+        counter8 += 1;
+        number8.innerHTML = counter8 + "%";
+    }
+}, 36)
+  var typed = new Typed('#element', {
+    strings:['web Developer','MERN-STACK Developer','Front-End Developer'],
+    typeSpeed:50,
+     } );
+    </script>
+    
+</body>
+</html>
