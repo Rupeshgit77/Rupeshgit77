@@ -1,0 +1,25 @@
+
+.lyrics-container {
+    overflow: hidden;
+    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding-left: 30%;
+}
+
+.lyrics {
+    font-size: 18px;
+    line-height: 1.5;
+    animation: scrollLyrics 8s linear infinite;
+}
+
+@keyframes scrollLyrics {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
